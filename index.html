@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<title>Морские круизы</title>
+</head>
+<body>
+	<header id="header">
+		<a class="menu-btn" id="menu-btn"><img id="img" src="./assets/img/menu.svg"></a>
+		<div id="menu-list">
+			<a href="" class="menu-item">Лучшие предложения</a>
+			<a href="" class="menu-item">Скидки</a>
+			<a href="" class="menu-item">Путеводитель</a>
+		</div>
+		<div class="header__setings">
+			<a class="header__setings-item item-prof" href="#">
+				<img src="./assets/img/icons/user.png">
+				Личный кабинет
+				<img src="./assets/img/icons/mbTriangle.png">
+			</a>
+			<a class="header__setings-item item-curr" href="#">
+				<img src="./assets/img/icons/rub.png">
+				Рубль
+				<img src="./assets/img/icons/mbTriangle.png">
+			</a>
+			<a class="header__setings-item item-lang" href="#">
+				Ru
+				<img src="./assets/img/icons/mbTriangle.png">
+			</a>
+		</div>
+
+		<p class="header__support support-info">
+			<a class="support-info__number" href=”tel:+78005006105”>8 800 500-61-05</a>
+			Круглосуточная поддержка
+		</p>
+		<img id="logo" src="./assets/img/logo.svg" alt="Морские круизы">
+		<p class="header__text-title text-title_small">Морские прогулки</p>
+		<p class="header__text-title text-title_big">ПО ЧЁРНОМУ МОРЮ</p>
+		<button id="scroll-btn" class="header__btn btn_big-blue">Выбрать круиз</button>
+		<img class="snake-figure" src="./assets/img/figure.png" alt="">
+	</header>
+
+	<div id="popup">
+		<p id="popup-close">+</p>
+		<p id="popup-next">>>></p>
+		<div id="popup-window">
+			<img class="popup-img showing" src="./assets/img/Anapa.png" alt="">
+			<img class="popup-img" src="./assets/img/sochi-246.png" alt="">
+			<img class="popup-img" src="./assets/img/Gelen.png" alt="">
+			<img class="popup-img" src="./assets/img/Novoross.png" alt="">
+			<img class="popup-img" src="./assets/img/sea.png" alt="">
+		</div>
+	</div>
+
+	<main>
+		<div class="main__catalog">
+			<p class="main__catalog-title">Каталог круизов</p>
+			<a href="" class="main__sort-btn">
+				Сортировать круизы по <mark>цене</mark>
+				<img src="./assets/img/icons/mbTriangle.png" alt="">
+			</a>
+		</div>
+		<div class="main__grid-container">
+			<figure class="cruise cruise__mar-and-pad">
+				<div class="cruise__img" Anapa>
+					<div class="tag top-seller">
+						<p class="tag__text">ХИТ ПРОДАЖ</p>
+					</div>
+				</div>
+				<figcaption class="cruise__title">
+					Морской круиз в Анапу
+					<img src="./assets/img/icons/rtTriangle.png" alt="">
+				</figcaption>
+				<p class="cruise__descript">
+					<mark class="cruise__mark-descript">Маршрут: </mark>Сочи-Лазаревское-Геленджик-Анапа
+				</p>
+				<p class="cruise__descript mb-80"><mark class="cruise__mark-descript">Продолжительность: </mark>10 ч. 0 мин.</p>
+				<p class="cruise__price">49 000 руб.</p>
+			</figure>
+			<figure class="cruise cruise__mar-and-pad">
+				<div class="cruise__img" Outing>
+					<div class="tag pt-38 stock">
+						<p class="tag__text">АКЦИЯ</p>
+					</div>
+				</div>
+				<figcaption class="cruise__title">
+					Обзорная морская прогулка с экскурсией
+					<img src="./assets/img/icons/rtTriangle.png" alt="">
+				</figcaption>
+				<p class="cruise__descript">
+					<mark class="cruise__mark-descript">Маршрут: </mark>Сочи-Адлер-Сочи (без высадки)
+				</p>
+				<p class="cruise__descript mb-100"><mark class="cruise__mark-descript">Продолжительность: </mark>1 ч. 0 мин.</p>
+				<p class="cruise__price">5 000 руб. <mark class="cruise__old-price">15000 руб.</mark></p>
+			</figure>
+			<figure class="cruise cruise__mar-and-pad">
+				<div class="cruise__img" Gelen>
+					<div class="tag pt-30 stock">
+						<p class="tag__text">СКИДКА<br>10%</p>
+					</div>
+				</div>
+				<figcaption class="cruise__title">
+					Морская прогулка в Геленджик
+					<img src="./assets/img/icons/rtTriangle.png" alt="">
+				</figcaption>
+				<p class="cruise__descript">
+					<mark class="cruise__mark-descript">Маршрут: </mark>Сочи-Туапсе-Геленджик
+				</p>
+				<p class="cruise__descript mb-100"><mark class="cruise__mark-descript">Продолжительность: </mark>12 ч. 30 мин.</p>
+				<p class="cruise__price">7 000 руб. <mark class="cruise__old-price">10000 руб.</mark></p>
+			</figure>
+			<figure class="cruise cruise__mar-and-pad">
+				<div class="cruise__img" Novoross></div>
+				<figcaption class="cruise__title">
+					Морской круиз в Новороссийск
+					<img src="./assets/img/icons/rtTriangle.png" alt="">
+				</figcaption>
+				<p class="cruise__descript">
+					<mark class="cruise__mark-descript">Маршрут: </mark>Сочи-Геленджик-Новороссийск-Геленджик-Сочи
+				</p>
+				<p class="cruise__descript mb-80"><mark class="cruise__mark-descript">Продолжительность: </mark>13 ч. 0 мин.</p>
+				<p class="cruise__price">14 800 руб.</p>
+			</figure>
+			<figure class="cruise cruise__mar-and-pad">
+				<div class="cruise__img" Abrau></div>
+				<figcaption class="cruise__title">
+					Морская прогулка в Абрау-Дюрсо
+					<img src="./assets/img/icons/rtTriangle.png" alt="">
+				</figcaption>
+				<p class="cruise__descript">
+					<mark class="cruise__mark-descript">Маршрут: </mark>Сочи-Абрау-Дюрсо
+				</p>
+				<p class="cruise__descript mb-80"><mark class="cruise__mark-descript">Продолжительность: </mark>11 ч. 0 мин.</p>
+				<p class="cruise__price">14 800 руб.</p>
+			</figure>
+		</div>
+		<button class="main__btn btn_big-blue">
+			Больше круизов
+			<img src="./assets/img/icons/mwTriangle.png" alt="">
+		</button>
+	</main>
+	<footer>
+		<ul class="footer__contacts">
+			<li class="footer__cont-info">
+				<a href="#" class="footer__cont-info">Вход для партнёров</a>
+			</li>
+			<li class="footer__cont-info">
+				<a href="#" class="footer__cont-info">О компании</a>
+			</li>
+			<li class="footer__cont-info">
+				<a href="#" class="footer__cont-info">Контакты</a>
+			</li>
+		</ul>
+		<div class="footer__callback">
+			<p class="footer__title">Будь на связи:</p>
+			<div class="footer__social-block">
+				<a href="#" class="footer__social-btn"><img src="./assets/img/social/vk.png" alt=""></a>
+				<a href="#" class="footer__social-btn"><img src="./assets/img/social/ok.png" alt=""></a>
+				<a href="#" class="footer__social-btn"><img src="./assets/img/social/yt.png" alt=""></a>
+				<a href="#" class="footer__social-btn"><img src="./assets/img/social/insta.png" alt=""></a>
+			</div>
+		</div>
+		<div class="footer__support">
+			<p class="support-info">
+				<a class="support-info__number" href=”tel:+78005006105”>8 800 500-61-05</a>
+				Круглосуточная поддержка
+			</p>
+			<p class="footer__rights">&copy 2016 ООО &laquoГородские круизы&raquo</p>
+		</div>
+	</footer>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
