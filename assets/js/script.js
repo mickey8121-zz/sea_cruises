@@ -9,27 +9,19 @@ let menuBtn = document.getElementById("menu-btn")
 	closeBtn = document.getElementById("popup-close")
 	nextBtn = document.getElementById("popup-next");
 
-// Scroll-btn under catalog cruises--------------------------------------------
-document.getElementById("scroll-btn").onclick = function () {
-	let height = header.offsetHeight;
-	let score = 30;
-
-	if (navigator.userAgent.search(/Firefox/) > 0 || navigator.userAgent.search(/Safari/) > 0 && !navigator.userAgent.search(/Chrome/)) {
-		window.scrollTo(0, height); //костыль для FF и Safari, т.к. с сетами они не работают (скроллят только до середины)
-	} else {
-
-		let timer = setInterval(function() {
-
-			score = score + height / 100;
-			window.scrollTo(0, score + 20);
-
-		}, 5);
-
-		setTimeout(function() {
-			clearInterval(timer);
-		}, 500);
-	}
+// scroll to catalog-----------------------------------------------------------
+document.getElementById("scroll-btn").onclick = function() {
+	handleButtonClick()
 };
+
+function handleButtonClick() {
+	let scrollTo = document.querySelector(".main__catalog-title")
+	scrollTo.scrollIntoView({
+		block: "start",
+		behavior: "smooth"
+	});
+}
+
 
 // drop-menu-------------------------------------------------------------------
 menuBtn.onclick = function () {
